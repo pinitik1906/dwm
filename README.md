@@ -17,3 +17,12 @@
 + refreshrate
 + swallow
 + uselessgap
+
+## install
+to install my dwl, type
+
+```
+git clone --depth 1 https://github.com/pinitik1906/dwm.git $HOME/stuffs/git/dwm
+cd $HOME/stuffs/git/dwm
+sudo make clean install
+```

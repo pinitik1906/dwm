@@ -19,7 +19,7 @@
 + uselessgap
 
 ## install
-to install my dwl, type
+to install my dwm, type
 
 ```
 git clone --depth 1 https://github.com/pinitik1906/dwm.git $HOME/stuffs/git/dwm

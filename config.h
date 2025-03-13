@@ -90,45 +90,45 @@ static const Key keys[] = {
 	{ 0,				XF86XK_AudioRaiseVolume, spawn,			SHCMD("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+") },
 	{ 0,				XF86XK_AudioMute,	 spawn,          	SHCMD("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle") },
 	{ 0, 				XF86XK_AudioMicMute,     spawn,          	SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle") },
-	{ 0,				XF86XK_MonBrightnessDown,spawn,          	{.v = (const char*[]){ "xbacklight", "-dec", "15", NULL } } },
-	{ 0,				XF86XK_MonBrightnessUp,  spawn,          	{.v = (const char*[]){ "xbacklight", "-inc", "15", NULL } } },
-	/* { MODKEY,                       	XK_p,      		togglebar,      	{0} }, */
-	/* { MODKEY,                       	XK_i,      		incnmaster,     	{.i = +1 } }, */
-	/* { MODKEY,                       	XK_p,      		incnmaster,     	{.i = -1 } }, */
-	/* { MODKEY|ShiftMask,             	XK_Return, 		zoom,           	{0} }, */
-	/* { MODKEY,                       	XK_Tab,    		view,           	{0} }, */
-	/* { MODKEY,                       	XK_t,      		setlayout,      	{.v = &layouts[0]} }, */
-	/* { MODKEY,                       	XK_f,      		setlayout,		{.v = &layouts[1]} }, */
-	/* { MODKEY,                       	XK_m,      		setlayout,      	{.v = &layouts[2]} }, */
-	/* { MODKEY,                       	XK_space,  		setlayout,      	{0} }, */
-	/* { MODKEY,                       	XK_0,      		view,           	{.ui = ~0 } }, */
-	/* { MODKEY|ShiftMask,             	XK_0,      		tag,            	{.ui = ~0 } }, */
-	/* { MODKEY,                       	XK_comma,  		focusmon,       	{.i = -1 } }, */
-	/* { MODKEY,                       	XK_period, 		focusmon,		{.i = +1 } }, */
-	/* { MODKEY|ShiftMask,             	XK_comma,		tagmon,			{.i = -1 } }, */
-	/* { MODKEY|ShiftMask,             	XK_period, 		tagmon,         	{.i = +1 } }, */
+	{ 0,				XF86XK_MonBrightnessDown,spawn,          	SHCMD("xbacklight -dec 15") },
+	{ 0,				XF86XK_MonBrightnessUp,  spawn,          	SHCMD("xbacklight -inc 15") },
+	/* { MODKEY,                    XK_p,      		 togglebar,      	{0} }, */
+	/* { MODKEY,                    XK_i,      		 incnmaster,     	{.i = +1 } }, */
+	/* { MODKEY,                    XK_p,      		 incnmaster,     	{.i = -1 } }, */
+	/* { MODKEY|ShiftMask,		XK_Return, 		 zoom,           	{0} }, */
+	/* { MODKEY,                    XK_Tab,    		 view,           	{0} }, */
+	/* { MODKEY,                    XK_t,      		 setlayout,      	{.v = &layouts[0]} }, */
+	/* { MODKEY,                    XK_f,      		 setlayout,		{.v = &layouts[1]} }, */
+	/* { MODKEY,                    XK_m,      		 setlayout,      	{.v = &layouts[2]} }, */
+	/* { MODKEY,                    XK_space,  		 setlayout,      	{0} }, */
+	/* { MODKEY,                    XK_0,      		 view,           	{.ui = ~0 } }, */
+	/* { MODKEY|ShiftMask,          XK_0,      		 tag,            	{.ui = ~0 } }, */
+	/* { MODKEY,                    XK_comma,  		 focusmon,       	{.i = -1 } }, */
+	/* { MODKEY,                    XK_period, 		 focusmon,		{.i = +1 } }, */
+	/* { MODKEY|ShiftMask,          XK_comma,		 tagmon,		{.i = -1 } }, */
+	/* { MODKEY|ShiftMask,		XK_period, 		 tagmon,         	{.i = +1 } }, */
 
 	/* app binds */
-	{ MODKEY,			XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,			XK_w,      spawn,          {.v = (const char*[]){ BROWSER, NULL } } },
-	{ MODKEY,			XK_e,      spawn,	   {.v = (const char*[]){ MAIL, NULL } } },
-	{ MODKEY,			XK_r,      spawn,	   {.v = (const char*[]){ TERMINAL, "-e", "lfub", NULL } } },
-	{ MODKEY,			XK_s,      spawn,          {.v = (const char*[]){ TERMINAL, "-e", "ncmpcpp", "-q", NULL } } },
-	{ MODKEY,			XK_a,      spawn,          {.v = (const char*[]){ TERMINAL, "-e", "newsboat", "-q", NULL } } },
-	{ MODKEY|ControlMask,		XK_c,	   spawn,	   SHCMD("ffplay -loglevel -8 -fast /dev/video0") },
-	{ MODKEY,			XK_b,	   spawn,	   SHCMD("dunstify -t 2000 $(date +%H:%M:%S) $(date +%m/%d/%Y)") },
+	{ MODKEY,			XK_Return,		spawn,			{.v = termcmd } },
+	{ MODKEY,                       XK_d,      		spawn,          	{.v = dmenucmd } },
+	{ MODKEY,			XK_w,      		spawn,          	{.v = (const char*[]){ BROWSER, NULL } } },
+	{ MODKEY,			XK_e,      		spawn,	   		{.v = (const char*[]){ MAIL, NULL } } },
+	{ MODKEY,			XK_r,      		spawn,	   		{.v = (const char*[]){ TERMINAL, "-e", "lfub", NULL } } },
+	{ MODKEY,			XK_s,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "ncmpcpp", "-q", NULL } } },
+	{ MODKEY,			XK_a,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "newsboat", "-q", NULL } } },
+	{ MODKEY|ControlMask,		XK_c,	   		spawn,	   		SHCMD("ffplay -loglevel -8 -fast /dev/video0") },
+	{ MODKEY,			XK_b,	   		spawn,	   		SHCMD("dunstify -t 2000 $(date +%H:%M:%S) $(date +%m/%d/%Y)") },
 	
 	/* tags */
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
+	TAGKEYS(                        XK_1,                   0)
+	TAGKEYS(                        XK_2,                   1)
+	TAGKEYS(                        XK_3,                   2)
+	TAGKEYS(                        XK_4,                   3)
+	TAGKEYS(                        XK_5,                   4)
+	TAGKEYS(                        XK_6,                   5)
+	TAGKEYS(                        XK_7,                   6)
+	TAGKEYS(                        XK_8,                   7)
+	TAGKEYS(                        XK_9,                   8)
 };
 
 /* button definitions */
@@ -147,4 +147,3 @@ static const Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-

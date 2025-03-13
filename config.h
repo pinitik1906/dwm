@@ -118,7 +118,6 @@ static const Key keys[] = {
 	{ MODKEY,			XK_s,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "ncmpcpp", "-q", NULL } } },
 	{ MODKEY,			XK_a,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "newsboat", "-q", NULL } } },
 	{ MODKEY|ControlMask,		XK_c,	   		spawn,	   		SHCMD("ffplay -loglevel -8 -fast /dev/video0") },
-	{ MODKEY,			XK_b,	   		spawn,	   		SHCMD("notify-send -t 2000 $(date +%H:%M:%S) $(date +%m/%d/%Y)") },
 	
 	/* tags */
 	TAGKEYS(                        XK_1,                   0)

@@ -14,6 +14,7 @@
 + actualfullscreen
 + alwayscenter
 + attachbottom
++ hide vacant tags
 + refreshrate
 + swallow
 + uselessgap

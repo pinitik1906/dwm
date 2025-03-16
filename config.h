@@ -83,6 +83,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      		 quit,           	{0} },
 	{ MODKEY,			XK_t,	   		 togglefloating, 	{0} },
 	{ MODKEY,			XK_f,      		 togglefullscr,  	{0} },
+	{ MODKEY,			XK_comma,      		 spawn,  	   	SHCMD("i3lock --nofork --radius 50 --inside-color=00000000 --line-uses-inside --verif-size=16 --verif-text=Verifying --wrong-size=16 --wrong-text=Wrong -Fei ~/.config/bg/lock.png | loginctl suspend") },
 	{ MODKEY,			XK_p,      		 spawn,  	   	SHCMD("xcolor -f HEX -s clipboard") },
 	{ MODKEY|ShiftMask,		XK_p,      		 spawn,  	   	SHCMD("xcolor -f rgb -s clipboard") },
 	{ 0,				XK_Print,  		 spawn,          	SHCMD("scrot $HOME/stuffs/pic/screenshots/%m-%d-%Y_%T-screenshot.png -izs -l mode=edge && $(notify-send -t 1250 screenshot_taken)") },
@@ -93,6 +94,7 @@ static const Key keys[] = {
 	{ 0, 				XF86XK_AudioMicMute,     spawn,          	SHCMD("pactl set-source-mute @DEFAULT_SOURCE@ toggle") },
 	{ 0,				XF86XK_MonBrightnessDown,spawn,          	SHCMD("xbacklight -dec 15") },
 	{ 0,				XF86XK_MonBrightnessUp,  spawn,          	SHCMD("xbacklight -inc 15") },
+	{ MODKEY,			XK_space,		 spawn,          	SHCMD("dunstctl history-pop") },
 	/* { MODKEY,                    XK_p,      		 togglebar,      	{0} }, */
 	/* { MODKEY,                    XK_i,      		 incnmaster,     	{.i = +1 } }, */
 	/* { MODKEY,                    XK_p,      		 incnmaster,     	{.i = -1 } }, */

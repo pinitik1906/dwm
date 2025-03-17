@@ -2,7 +2,7 @@
 
 /* default apps */
 #define TERMINAL "st"
-#define TERMCLASS "St"
+#define TERMCLASS "st"
 #define BROWSER "librewolf"
 #define MAIL "thunderbird"
 

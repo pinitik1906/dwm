@@ -6,8 +6,8 @@
 + `libX11`
 + `libXft`
 + `libXinerama`
-+ `freetype`
 + `fontconfig`
++ `freetype`
 
 ## patches
 

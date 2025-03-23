@@ -81,6 +81,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_k,      		 focusstack,     	{.i = -1 } },
 	{ MODKEY,			XK_q,      		 killclient,     	{0} },
 	{ MODKEY|ShiftMask,             XK_q,      		 quit,           	{0} },
+	{ MODKEY|ShiftMask,		XK_s,			 togglesticky,		{0} },
 	{ MODKEY,			XK_t,	   		 togglefloating, 	{0} },
 	{ MODKEY,			XK_f,      		 togglefullscr,  	{0} },
 	{ MODKEY,			XK_comma,      		 spawn,  	   	SHCMD("i3lock --nofork --radius 50 --inside-color=00000000 --line-uses-inside --verif-size=16 --verif-text=Verifying --wrong-size=16 --wrong-text=Wrong -Fei ~/.config/bg/lock.png | loginctl suspend") },
@@ -95,7 +96,7 @@ static const Key keys[] = {
 	{ 0,				XF86XK_MonBrightnessDown,spawn,          	SHCMD("brillo -u 150000 -q -U 10 -v 0") },
 	{ 0,				XF86XK_MonBrightnessUp,  spawn,          	SHCMD("brillo -u 150000 -q -A 10 -v 0") },
 	{ MODKEY,			XK_space,		 spawn,          	SHCMD("dunstctl history-pop") },
-	/* { MODKEY,                    XK_p,      		 togglebar,      	{0} }, */
+	{ MODKEY,			XK_b,      		 togglebar,      	{0} },
 	/* { MODKEY,                    XK_i,      		 incnmaster,     	{.i = +1 } }, */
 	/* { MODKEY,                    XK_p,      		 incnmaster,     	{.i = -1 } }, */
 	/* { MODKEY|ShiftMask,		XK_Return, 		 zoom,           	{0} }, */

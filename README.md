@@ -16,6 +16,7 @@
 + attachbottom
 + hide vacant tags
 + refreshrate
++ sticky
 + swallow
 + uselessgap
 

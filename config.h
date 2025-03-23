@@ -68,7 +68,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, NULL };
+static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static const Key keys[] = {
@@ -121,6 +121,9 @@ static const Key keys[] = {
 	{ MODKEY,			XK_a,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "newsboat", "-q", NULL } } },
 	{ MODKEY|ControlMask,		XK_c,	   		spawn,	   		SHCMD("ffplay -loglevel -8 -fast /dev/video0") },
 	{ MODKEY,			XK_space,   		spawn,	   		SHCMD("dunstctl history-pop") },
+	{ MODKEY,			XK_y,   		spawn,	   		SHCMD("yt -g") },
+	{ MODKEY,			XK_semicolon,  		spawn,	   		SHCMD("rofi-emoji") },
+	{ MODKEY,			XK_m,			spawn,	   		SHCMD("rofi-mounter") },
 	
 	/* tags */
 	TAGKEYS(                        XK_1,                   0)

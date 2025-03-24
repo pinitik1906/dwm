@@ -19,7 +19,7 @@ static const char col_gray1[]       = "#3c3836";
 static const char col_gray2[]       = "#7b6e63";
 static const char col_gray3[]       = "#ebdbb2";
 static const char col_gray4[]       = "#fbf1c7";
-static const char col_cyan[]        = "#005577";
+static const char col_cyan[]        = "#458588";
 static const char *colors[][3]      = {
 
 	/*               fg         bg         border   */
@@ -119,6 +119,7 @@ static const Key keys[] = {
 	{ MODKEY,			XK_e,      		spawn,	   		{.v = (const char*[]){ MAIL, NULL } } },
 	{ MODKEY,			XK_r,      		spawn,	   		{.v = (const char*[]){ TERMINAL, "-e", "lfub", NULL } } },
 	{ MODKEY,			XK_s,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "ncmpcpp", "-q", NULL } } },
+	{ MODKEY,			XK_c,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "calcurse", "-q", NULL } } },
 	{ MODKEY,			XK_a,      		spawn,          	{.v = (const char*[]){ TERMINAL, "-e", "newsboat", "-q", NULL } } },
 	{ MODKEY|ControlMask,		XK_c,	   		spawn,	   		SHCMD("ffplay -loglevel -8 -fast /dev/video0") },
 	{ MODKEY,			XK_space,   		spawn,	   		SHCMD("dunstctl history-pop") },

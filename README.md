@@ -15,6 +15,7 @@
 + alwayscenter
 + attachbottom
 + hide vacant tags
++ pertag
 + refreshrate
 + sticky
 + swallow

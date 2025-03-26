@@ -14,6 +14,7 @@
 + actualfullscreen
 + alwayscenter
 + attachbottom
++ dragmfact
 + hide vacant tags
 + pertag
 + refreshrate

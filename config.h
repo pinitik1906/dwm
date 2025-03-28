@@ -84,7 +84,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_s,			 togglesticky,		{0} },
 	{ MODKEY,			XK_t,	   		 togglefloating, 	{0} },
 	{ MODKEY,			XK_f,      		 togglefullscr,  	{0} },
-	{ MODKEY,			XK_comma,      		 spawn,  	   	SHCMD("i3lock --nofork --radius 50 --inside-color=00000000 --line-uses-inside --verif-size=16 --verif-text=Verifying --wrong-size=16 --wrong-text=Wrong -Fei ~/.config/bg/lock.png | loginctl suspend") },
+	{ MODKEY,			XK_comma,      		 spawn,  	   	SHCMD("i3lock --nofork --radius 50 --inside-color=00000000 --line-uses-inside --verif-size=16 --verif-text=Verifying --wrong-size=16 --wrong-text=Wrong -Fe | loginctl suspend") },
 	{ MODKEY,			XK_p,      		 spawn,  	   	SHCMD("xcolor -f HEX -s clipboard") },
 	{ MODKEY|ShiftMask,		XK_p,      		 spawn,  	   	SHCMD("xcolor -f rgb -s clipboard") },
 	{ 0,				XK_Print,  		 spawn,          	SHCMD("scrot -z $HOME/stuffs/pic/screenshots/screenshot-%m-%d-%Y_%T.png -izs -l mode=edge && $(notify-send -t 1250 screenshot_taken)") },

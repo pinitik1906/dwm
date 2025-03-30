@@ -15,10 +15,10 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=9", "NotoColorEmoji:size=9:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=9";
-static const char col_gray1[]       = "#3c3836";
-static const char col_gray2[]       = "#7b6e63";
-static const char col_gray3[]       = "#ebdbb2";
-static const char col_gray4[]       = "#fbf1c7";
+static const char col_gray1[]       = "#32302f";
+static const char col_gray2[]       = "#928374";
+static const char col_gray3[]       = "#a89984";
+static const char col_gray4[]       = "#ebdbb2";
 static const char col_cyan[]        = "#458588";
 static const char *colors[][3]      = {
 

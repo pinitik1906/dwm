@@ -17,7 +17,7 @@ static const char *fonts[]          = { "monospace:size=9", "NotoColorEmoji:size
 static const char dmenufont[]       = "monospace:size=9";
 static const char col_gray1[]       = "#32302f";
 static const char col_gray2[]       = "#928374";
-static const char col_gray3[]       = "#a89984";
+static const char col_gray3[]       = "#d5c4a1";
 static const char col_gray4[]       = "#ebdbb2";
 static const char col_cyan[]        = "#458588";
 static const char *colors[][3]      = {

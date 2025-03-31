@@ -3,23 +3,23 @@
 ## dependencies
 (if it does not build, you might need to install the `*-devel` packages also)
 
-+ `libX11`
-+ `libXft`
-+ `libXinerama`
-+ `fontconfig`
-+ `freetype`
+- `libX11`
+- `libXft`
+- `libXinerama`
+- `fontconfig`
+- `freetype`
 
 ## patches
 
-+ actualfullscreen
-+ alwayscenter
-+ attachbottom
-+ hide vacant tags
-+ pertag
-+ refreshrate
-+ sticky
-+ swallow
-+ uselessgap
+- actualfullscreen
+- alwayscenter
+- attachbottom
+- hide vacant tags
+- pertag
+- refreshrate
+- sticky
+- swallow
+- uselessgap
 
 ## install
 to install my dwm, type

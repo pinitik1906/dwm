@@ -14,7 +14,6 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "monospace:size=9", "NotoColorEmoji:size=9:antialias=true:autohint=true" };
-static const char dmenufont[]       = "monospace:size=9";
 static const char col_gray1[]       = "#32302f";
 static const char col_gray2[]       = "#928374";
 static const char col_gray3[]       = "#d5c4a1";
@@ -68,7 +67,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-i", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 static const Key keys[] = {
@@ -124,8 +123,8 @@ static const Key keys[] = {
 	{ MODKEY|ControlMask,		XK_c,	   		spawn,	   		SHCMD("ffplay -loglevel -8 -fast /dev/video0") },
 	{ MODKEY,			XK_space,   		spawn,	   		SHCMD("dunstctl history-pop") },
 	{ MODKEY,			XK_y,   		spawn,	   		SHCMD("yt -g") },
-	{ MODKEY,			XK_semicolon,  		spawn,	   		SHCMD("rofi-emoji") },
-	{ MODKEY,			XK_m,			spawn,	   		SHCMD("rofi-mounter") },
+	{ MODKEY,			XK_semicolon,  		spawn,	   		SHCMD("dmenu-emoji") },
+	{ MODKEY,			XK_m,			spawn,	   		SHCMD("dmenu-mounter") },
 	
 	/* tags */
 	TAGKEYS(                        XK_1,                   0)

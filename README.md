@@ -3,11 +3,11 @@
 ## dependencies
 (if it does not build, you might need to install the `*-devel` packages also)
 
+- `fontconfig`
+- `freetype`
 - `libX11`
 - `libXft`
 - `libXinerama`
-- `fontconfig`
-- `freetype`
 
 ## patches
 
